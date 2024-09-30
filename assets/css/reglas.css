@@ -4,6 +4,8 @@
     --bg-color: #EFF0EF;
     --bg-color2: #C0C0C0;
     --title-color: #120E0D;
+    --title: #20adff;
+    --bold: #8337ff;
 }
 
 * {
@@ -71,18 +73,37 @@ main {
     border-radius: 1em;
 }
 
+a {
+    color: var(--primary-color);
+}
+
 h2 {
+    color: var(--title);
     padding: 0.8em;
+}
+
+b {
+    color: var(--bold);
 }
 
 ul {
     list-style-type: disc;
 }
 
+ol {
+    color: var(--bold);
+}
+
 ul,
 ol {
     padding: 0.5em;
     padding-left: 1.5em;
+    font-weight: bold;
+}
+
+ul li li, ol li li {
+    color: var(--primary-color);
+    font-weight: normal;
 }
 
 section {

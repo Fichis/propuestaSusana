@@ -1,0 +1,163 @@
+:root {
+    --secondary-color: #9AA6D3;
+    --primary-color: #5B606A;
+    --bg-color: #EFF0EF;
+    --bg-color2: #C0C0C0;
+    --title-color: #120E0D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/paven.png);
+    background-color: var(--bg-color);
+    /* background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    color: var(--primary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    color: var(--title-color);
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: var(--title-color);
+    padding: 1em;
+    margin: 8px 0 3% 0;
+    border-radius: 1em;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+}
+
+nav ul {
+    padding: 0.8em;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+nav ul a {
+    color: var(--bg-color);
+    text-decoration: none;
+    padding: 1em;
+    transition: all 0.5s;
+}
+
+
+nav ul li:hover a {
+    color: var(--title-color);
+    background-color: var(--bg-color);
+    padding: 1em;
+    border-radius: 0.8em;
+    box-shadow: inset -2px -3px 12px var(--title-color);
+}
+
+main {
+    background-color: var(--bg-color2);
+    width: 80%;
+    padding: 1.7em;
+    margin: 0 auto 3% auto;
+    border-radius: 1em;
+}
+
+h2 {
+    padding: 0.8em;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul,
+ol {
+    padding: 0.5em;
+    padding-left: 1.5em;
+}
+
+section {
+    border-radius: 0.3em;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+section article {
+    padding: 1.2em;
+    border-radius: 0.8em;
+    background-color: var(--bg-color);
+    width: 23%;
+    /* box-shadow: inset -3px -5px 15px -5px var(--title-color); */
+}
+
+.centrado {
+    text-align: center;
+}
+
+.enlaces {
+    width: 30%;
+    margin: 0 auto;
+}
+
+#container-pyc {
+    columns: 2;
+    text-align: justify;
+    column-gap: 5em;
+}
+
+table {
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--bg-color);
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: var(--bg-color2);
+    color: var(--title-color);
+}
+
+table th {
+    background-color: var(--bg-color);
+    color: var(--primary-color) ;
+}
+
+td, th, tr {
+    border: 1px solid black;
+    padding: 0.4em;
+}
+
+
+
+button {
+    margin: 25px 0 0 65%;
+    padding: 0.5em;
+    border: 0;
+    background-color: var(--bg-color2);
+    border-radius: 0.8em;
+}
+
+button a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0.3em;
+}
+
+footer {
+    background-color: var(--title-color);
+    color: var(--bg-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5em;
+    border-radius: 1em;
+}

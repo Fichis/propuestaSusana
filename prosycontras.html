@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/reglas.css">
+    <title>Natural Docs - Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="./assets/img/n-docs.ico" alt="Natural Docs"></a> &nbsp; <h1>Natural Docs</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./info.html">Información</a></li>
+            <li><a href="./prosycontras.html">Ventajas e Inconvenientes</a></li>
+            <li><a href="./opinion.html">Opinión</a></li>
+            <li><a href="./enlaces.html">Enlaces de interés</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="container-pyc">
+            <h2>Ventajas</h2>
+            <ol>
+                <li>
+                    <b>Estilo de comentarios flexible:</b>
+                    <ul>
+                        <li>
+                            La mayor ventaja es que no necesitas aprender una sintaxis de comentarios nueva ni estricta como Javadoc o PHPDoc. Los
+                            desarrolladores pueden escribir comentarios más naturales y aún así generar documentación útil.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Manejo automático de referencias:</b>
+                    <ul>
+                        <li>
+                            Natural Docs automáticamente crea vínculos entre diferentes partes de la documentación, facilitando la navegación entre
+                            clases, métodos, o funciones relacionadas sin necesidad de intervención manual.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Multilenguaje:</b>
+                    <ul>
+                        <li>
+                            Al ser compatible con varios lenguajes de programación, es útil en proyectos donde se emplean múltiples tecnologías, lo
+                            que facilita la unificación de la documentación en una sola herramienta.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Documentación amigable para usuarios finales:</b>
+                    <ul>
+                        <li>
+                            La documentación generada está organizada de una manera que es fácil de entender y navegar, lo que la hace accesible
+                            tanto para desarrolladores como para usuarios que no están familiarizados con la sintaxis técnica de los comentarios.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <h2>Inconvenientes</h2>
+            <ol>
+                <li>
+                    <b>Menos control sobre la estructura de los comentarios:</b>
+                    <ul>
+                        <li>
+                            Aunque permite un estilo de comentarios más relajado, la flexibilidad puede ser un inconveniente si los equipos no
+                            siguen ciertas normas, lo que puede llevar a inconsistencias en la calidad o claridad de la documentación.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Menos potente que herramientas específicas:</b>
+                    <ul>
+                        <li>
+                            Para proyectos que requieren una documentación extremadamente detallada o que dependen mucho de la sintaxis estricta
+                            (como para APIs o bibliotecas públicas), Natural Docs puede no ser tan poderoso como herramientas especializadas como
+                            Sphinx, phpDocumentor o JSDoc.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Limitado a HTML:</b>
+                    <ul>
+                        <li>
+                            A diferencia de Sphinx o phpDocumentor, que ofrecen salida en múltiples formatos (PDF, ePub, LaTeX), Natural Docs solo
+                            genera HTML, lo que puede ser una limitación si se necesitan otros formatos.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Curva de aprendizaje mínima, pero requiere configuración:</b>
+                    <ul>
+                        <li>
+                            Aunque es fácil de usar, especialmente para desarrolladores que quieren una solución simple, requiere cierta
+                            configuración en términos de estructura de carpetas o el archivo de configuración inicial, lo que puede no ser
+                            completamente trivial en proyectos muy grandes.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <h2 class="centrado">Comparativa Resumen</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Característica</th>
+                    <th>Sphinx (Python)</th>
+                    <th>phpDocumentor (PHP)</th>
+                    <th>JSDoc (JavaScript)</th>
+                    <th>Natural Docs (Multilenguaje)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Facilidad de uso</th>
+                    <td>Curva de aprendizaje alta</td>
+                    <td>Fácil para usuarios PHP</td>
+                    <td>Fácil para usuarios JS</td>
+                    <td>Fácil, flexible (estilo de lenguaje natural)</td>
+                </tr>
+                <tr>
+                    <th>Formatos soportados</th>
+                    <td>HTML, PDF, ePub, LaTeX</td>
+                    <td>HTML, PDF</td>
+                    <td>HTML</td>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <th>Extensibilidad</th>
+                    <td>Altamente extensible</td>
+                    <td>Limitado</td>
+                    <td>Moderadamente extensible</td>
+                    <td>Moderadamente extensible</td>
+                </tr>
+                <tr>
+                    <th>Lenguajes soportados</th>
+                    <td>Python y otros con plugins</td>
+                    <td>Exclusivo para PHP</td>
+                    <td>Exclusivo para JavaScript</td>
+                    <td>Multilenguaje (C, C++, PHP, JS, Python, etc.)</td>
+                </tr>
+                <tr>
+                    <th>Rendimiento</th>
+                    <td>Bueno (puede ser lento en proyectos grandes)</td>
+                    <td>Lento en proyectos grandes</td>
+                    <td>Ligero, rápido</td>
+                    <td>Rápido en proyectos medianos</td>
+                </tr>
+                <tr>
+                    <th>Soporte para versiones</th>
+                    <td>Soporte nativo y completo</td>
+                    <td>Limitado</td>
+                    <td>Depende de integración</td>
+                    <td>No nativo (requiere control manual)</td>
+                </tr>
+                <tr>
+                    <th>Curva de aprendizaje</th>
+                    <td>Alta (requiere reStructuredText)</td>
+                    <td>Media (familiaridad con PHPDoc)</td>
+                    <td>Baja (basado en comentarios)</td>
+                    <td>Baja (basado en comentarios de estilo libre)</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    <footer>
+        <p>Avda. Maracena 163</p>
+        <p>&copy;2024. Todos los derechos reservados</p>
+        <p>Redes Sociales</p>
+    </footer>
+</body>
+
+</html>

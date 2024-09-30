@@ -66,8 +66,23 @@ nav ul li:hover a {
 main {
     background-color: var(--bg-color2);
     width: 80%;
+    padding: 1.7em;
     margin: 0 auto 3% auto;
     border-radius: 1em;
+}
+
+h2 {
+    padding: 0.8em;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul,
+ol {
+    padding: 0.5em;
+    padding-left: 1.5em;
 }
 
 section {
@@ -81,9 +96,47 @@ section article {
     padding: 1.2em;
     border-radius: 0.8em;
     background-color: var(--bg-color);
-    width: 20%;
+    width: 23%;
     /* box-shadow: inset -3px -5px 15px -5px var(--title-color); */
 }
+
+.centrado {
+    text-align: center;
+}
+
+.enlaces {
+    width: 30%;
+    margin: 0 auto;
+}
+
+#container-pyc {
+    columns: 2;
+    text-align: justify;
+    column-gap: 5em;
+}
+
+table {
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--bg-color);
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: var(--bg-color2);
+    color: var(--title-color);
+}
+
+table th {
+    background-color: var(--bg-color);
+    color: var(--primary-color) ;
+}
+
+td, th, tr {
+    border: 1px solid black;
+    padding: 0.4em;
+}
+
+
 
 button {
     margin: 25px 0 0 65%;

@@ -6,5 +6,5 @@ window.addEventListener('blur', () => {
 })
 
 window.addEventListener('focus', () => {
-    document.tiele = previusTitle;
+    document.title = previusTitle;
 })

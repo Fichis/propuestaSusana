@@ -71,6 +71,7 @@ main {
     padding: 1.7em;
     margin: 0 auto 3% auto;
     border-radius: 1em;
+    text-align: justify;
 }
 
 a {
@@ -143,6 +144,12 @@ section article p {
     columns: 2;
     text-align: justify;
     column-gap: 5em;
+}
+
+#info {
+    padding: 3em;
+    margin: 0 auto;
+    text-align: justify;
 }
 
 table {

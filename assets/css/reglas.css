@@ -77,7 +77,12 @@ a {
     color: var(--primary-color);
 }
 
+p {
+    text-align: justify;
+}
+
 h2 {
+    text-align: center;
     color: var(--title);
     padding: 0.8em;
 }
@@ -119,6 +124,10 @@ section article {
     background-color: var(--bg-color);
     width: 23%;
     /* box-shadow: inset -3px -5px 15px -5px var(--title-color); */
+}
+
+section article p {
+    text-align: justify;
 }
 
 .centrado {
